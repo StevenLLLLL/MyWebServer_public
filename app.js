@@ -5,6 +5,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.listen(3000, () => {
+// 修改此处，添加 '0.0.0.0'
+app.listen(3000, '0.0.0.0', () => {
   console.log('Server is running on http://localhost:3000');
 });
